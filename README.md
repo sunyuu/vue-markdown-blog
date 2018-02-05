@@ -1,18 +1,30 @@
-# vue-blog
+# vue-markdown-blog
 
-> A Vue.js project
+> 一个把markdown文件生成vue架构博客的项目
 
-## Build Setup
+## Usage
 
 ``` bash
 # install dependencies
 npm install
+```
 
-# serve with hot reload at localhost:8080
-npm run dev
+在package.json中增加脚本
 
-# build for production with minification
+``` javascript
+{
+    "script": {
+        "start": "node webpack.start",
+        "build": "node webpack.build"
+    }
+}
+```
+
+``` bash
+#本地测试
+npm run start
+
+#构建到dist目录
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
