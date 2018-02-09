@@ -36,6 +36,18 @@ export default {
         h2 {
             font-size: 24px;
             font-weight: bold;
+
+            a {
+                color: rgba($color: #000000, $alpha: 0.65);
+
+                &:hover {
+                    color: #ff5d3d;
+                }
+            }
+        }
+
+        span {
+            color: rgba($color: #000000, $alpha: 0.55)
         }
     }
 </style>

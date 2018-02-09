@@ -32,3 +32,4 @@ npm run build
 
 1. 样式上进行优化
 2. 编译上提升性能，通过修改数据处理loder，探究node子进程的工作模式
+3. code增加highlight

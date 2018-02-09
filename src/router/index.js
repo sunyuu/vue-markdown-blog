@@ -2,7 +2,7 @@ import Vue from 'vue'
 import vueRouter from 'vue-router'
 import data from '../utils/data.html'
 import archive from '../components/archive'
-const post = resolve => require(['../components/post.vue'], resolve)
+import post from '../components/post.vue'
 
 console.log(data)
 

@@ -13,6 +13,9 @@
         <div class="main">
             <router-view></router-view>
         </div>
+        <footer>
+            © sunyuu
+        </footer>
     </div>
 </template>
 
@@ -42,8 +45,16 @@ export default {
 
             li {
                 float: left;
-                font-size: 16px;
+                font-size: 18px;
                 margin-right: 20px;
+
+                a {
+                    color: rgba($color: #000000, $alpha: 0.85);
+
+                    &:hover {
+                        color: #ff5d3d;
+                    }
+                }
             }
         }
     }
@@ -53,4 +64,9 @@ export default {
         margin: 0 auto;
     }
 
+    footer {
+        margin-top: 100px;
+        text-align: center;
+        font-size: 16px;
+    }
 </style>
