@@ -601,10 +601,10 @@
   }
   
   .markdown-body code {
-    padding: 0.2em 0.4em;
+    // padding: 0.2em 0.4em;
     margin: 0;
     font-size: 85%;
-    background-color: rgba(27,31,35,0.05);
+    // background-color: rgba(27,31,35,0.05);
     border-radius: 3px;
   }
   
@@ -613,12 +613,12 @@
   }
   
   .markdown-body pre>code {
-    padding: 0;
+    // padding: 0;
     margin: 0;
     font-size: 100%;
     word-break: normal;
     white-space: pre;
-    background: transparent;
+    // background: transparent;
     border: 0;
   }
   
@@ -642,14 +642,14 @@
   }
   
   .markdown-body pre code {
-    display: inline;
+    // display: inline;
     max-width: auto;
-    padding: 0;
+    // padding: 0;
     margin: 0;
-    overflow: visible;
+    // overflow: visible;
     line-height: inherit;
     word-wrap: normal;
-    background-color: transparent;
+    // background-color: transparent;
     border: 0;
   }
   

@@ -21,6 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 @import url('../assets/style/markdown.scss');
+@import url('../assets/style/highlight.scss');
 
 .post {
     margin-top: 60px;

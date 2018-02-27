@@ -4,7 +4,6 @@ import data from '../utils/data.html'
 import archive from '../components/archive'
 import post from '../components/post.vue'
 
-console.log(data)
 
 Vue.use(vueRouter)
 
@@ -21,7 +20,6 @@ const routes = [
         component: post,
         props: (route) => {
             let title = route.params.post
-            console.log(title)
             return {postData: data.markdown[title]}
         }
     }
