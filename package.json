@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "jsonml.js": "^0.1.0",
+    "nprogress": "^0.2.0",
     "ramda": "^0.25.0",
     "remark": "^9.0.0",
     "remark-github": "^7.0.3",
