@@ -34,6 +34,7 @@ export default {
 
 <style lang="scss">
     @import url('./assets/style/base.scss');
+    @import url('./assets/style/nprogress.scss');
 
     header {
         height: 160px;
