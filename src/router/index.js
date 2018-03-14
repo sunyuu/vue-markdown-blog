@@ -21,7 +21,10 @@ const routes = [
         component: post,
         props: (route) => {
             let title = route.params.post
-            return {postData: data.markdown[title]}
+            let pData = data.markdown.find((item) => {
+                return item.filename == title
+            })
+            return {postData: pData}
         }
     }
 ]

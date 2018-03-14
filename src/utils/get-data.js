@@ -31,12 +31,12 @@ module.exports = function generate(source) {
     // }
     source = Array.isArray(source) ? source : [source]
     const filePaths = findFiles(source)
-    let data = {}
+    let data = []
     filePaths.forEach(elem => {
         let mdfile = readMdFile(elem)
         if (!mdfile) return
         let mdfilename = path.basename(elem, '.md')
-        data[mdfilename] = {...mdfile, filepath: path.join(process.cwd(), elem)}
+        data.push({...mdfile, filepath: path.join(process.cwd(), elem), filename: mdfilename})
     })
     // return filePaths.map(elem => {
     //     let mdfile = readMdFile(elem)
@@ -46,6 +46,9 @@ module.exports = function generate(source) {
 
     //     return data
     // })
+    data.sort((a, b) => {
+        return a.meta.publishDate < b.meta.publishDate
+    })
     return data
     
 }

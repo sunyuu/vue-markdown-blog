@@ -1,7 +1,7 @@
 <template>
     <div class="archive">
         <div v-for="(value, key) in mdData" :key="key" class="archive-item">
-            <h2><router-link :to="'/posts/' + key">{{value.meta.title}}</router-link></h2>
+            <h2><router-link :to="'/posts/' + value.filename">{{value.meta.title}}</router-link></h2>
             <span>{{value.meta.publishDate.slice(0, 10)}}</span>
         </div>
     </div>
